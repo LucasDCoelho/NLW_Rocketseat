@@ -16,7 +16,7 @@ app.register(cors)
 
 */
 
-app.get('/hello', async () => {
+app.get('/', async () => {
     const habits = await prisma.habit.findMany()
 
 
